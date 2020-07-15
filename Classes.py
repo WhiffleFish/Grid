@@ -10,9 +10,9 @@ class gridAgent(object):
         self.reset()
 
         # Used to calculate value of cells
-        self.raw_exp_grid = np.zeros((10,10))
-        self.land_count_grid = np.zeros((10,10))
-        self.exp_grid = np.zeros((10,10))
+        self.raw_exp_grid = np.zeros((10,10)) # cell wins - cell losses
+        self.land_count_grid = np.zeros((10,10)) # How many times has agent landed on cell
+        self.exp_grid = np.zeros((10,10)) # (cell wins - cell losses)/(times landed on cell)
 
 
     def reset(self):
